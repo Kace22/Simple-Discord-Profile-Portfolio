@@ -1,0 +1,313 @@
+/* © Kace21 2024*/
+/*All Rights reserved Kace21*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --background-light: rgb(31, 31, 31);
+    --background-dark: black;
+    --secondory-color: rgb(32, 229, 243);
+    --text-dark: black;
+    --text-light: rgb(113, 111, 111);
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+    --text-red: rgb(192, 71, 71);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.section_container {
+    display: flex;
+}
+
+.section_content {
+    width: 50%;
+    height: 42rem;
+    margin-left: 25%;
+    background-color: var(--background-light);
+    border-radius: 20px;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.top_pic {
+    width: 100%;
+    height: 12rem;
+}
+
+.pfp {
+    border-radius: 100px;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+.user_info {
+    position: relative;
+    left: 13rem;
+    top: -8rem;
+    width: 40%;
+}
+
+.user_info h1 {
+    font-size: 2rem;
+}
+
+.user_info h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.user_info img {
+    width: 1.5rem;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+}
+
+.contact {
+    position: relative;
+    padding: 0.3rem 1.5rem;
+    float: right;
+    top: -15.5rem;
+    margin-right: 2rem;
+    border-radius: 6.5px;
+    font-size: .9rem;
+    color: var(--text-red);
+    border: 2px var(--text-red) solid;
+    background-color: var(--background-light);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.contact:hover {
+    color: var(--text-red);
+    background-color: var(--background-dark);
+    border: 2px var(--extra-light) solid;
+}
+
+.section_content hr {
+    position: relative;
+    left: 3.8rem;
+    top: -5rem;
+}
+
+.nav_content {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    top: -3.9rem;
+    left: 14rem;
+    list-style: none;
+    transition: left .3s;
+}
+
+ul li a {
+    padding: o.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--text-light);
+    transition: .3s;
+    font-size: 1.1rem;
+}
+
+ul li a:hover{
+    border-bottom-color: var(--secondory-color);
+    color: var(--extra-light);
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.9rem;
+    margin-left: 2.8rem; 
+    line-height: 1.8rem;
+}
+
+
+
+#presence {
+   margin-top: 2rem;
+   margin-left: 1.8rem;
+}
+
+
+.icon-box ion-icon { --ionicon-stroke-width: 35px; }
+  
+article { display: none; }
+
+article.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+.spotify-status {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.progress-bar-container {
+background-color: #6e3434;
+height: 7px;
+width: 100%;
+border-radius: 5px;
+position: relative;
+left: .7rem;
+}
+.time-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.start-time, .end-time {
+font-size: 0.8em; /* adjust as needed */
+width: 25%;
+}
+
+.end-time{
+    position: relative;
+    left: 2.5rem;
+}
+.progress-bar {
+background-color: #fefffe; /* Spotify green */
+height: 100%;
+border-radius: 5px;
+}
+.spotify-status img {
+  width: 100px; /* Adjusted size */
+  height: 100px; /* Adjusted size */
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.spotify-status div {
+  line-height: 1.2;
+}
+.spotify-status .song {
+  font-weight: bold;
+}
+.spotify-status .artist {
+  color: #ccc;
+}
+.spotify-status .listening-to {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.vscode-embed {
+display: flex;
+align-items: center;
+background-color: transparent;
+color: #D4D4D4;
+padding: 10px;
+border-radius: 5px;
+font-size: 14px;
+}
+.vscode-embed img {
+width: 60px;
+height: 60px;
+margin-right: 10px;
+border-radius: 5px;
+}
+.vscode-embed div {
+line-height: 1.2;
+}
+.vscode-embed .working-on {
+color: #ffffff;
+font-size: 16px;
+}
+.vscode-embed .title {
+font-weight: bold;
+color: #9CDCFE;
+}
+.vscode-embed .text {
+color: #D4D4D4;
+}
+a:link {
+color: black;
+background-color: transparent;
+text-decoration: none;
+}
+.youtube-embed {
+display: flex;
+align-items: center;
+}
+
+.youtube-logo {
+margin-right: 10px;
+width: 3i0px; /* Adjust this value as needed */
+}
+
+.youtube-text {
+text-align: right;
+}
+.youtube-embed .watching-on {
+color: #070606;
+font-size: 18px;
+}
+.activity-icon {
+float: left;
+margin-right: 10px;
+width: 85px; /* Adjust this value as needed */
+}
+
+.small-profile-pic {
+    width: 80px; /* Adjusted size */
+    height: 80px; /* Adjusted size */
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(81, 81, 81);
+    border-radius: 10px;
+  }
+
+@media (width < 750px) {
+
+    .section_content {
+        width: 100%;
+        margin: 0;
+        height: 51rem;
+    }
+
+    .section_content button {
+        display: none;
+    }
+    
+}
